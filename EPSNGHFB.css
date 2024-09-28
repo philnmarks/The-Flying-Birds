@@ -1,0 +1,191 @@
+body{
+    background: linear-gradient(135deg, #fdf6e3 0%, #f6e7d8 100%); /* Soft gradient */
+}
+
+
+#MusicNGHFB, #NGHFB, .band-content {
+    font-family: "NoelFont", sans-serif;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Adjusts the spacing between them */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Adds space between the two containers */
+    
+}
+
+h3, h4 {
+    font-family: "NoelFont";
+    letter-spacing: 1.5px;
+}
+
+.band-content {
+    width: 45%; /* Adjust width to fit both side by side */
+    
+}
+
+.music {
+    width: 65%; /* Adjust width as needed */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px; /* Adds padding inside the container */
+    border: 5px solid #333; /* Dark border */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+    background-color: #fdf6e3; /* Light background color to distinguish it */
+}
+
+.music div {
+    width: 200px; /* Set consistent size for album cover divs */
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.music div:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    transition: all 0.3s ease;
+}
+
+
+.music div::after {
+    content: attr(data-description);
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.music div:hover::after {
+    display: block;
+}
+
+
+.music div {
+    filter: grayscale(80%);
+    transition: filter 0.3s ease;
+}
+
+.music div:hover {
+    filter: grayscale(0%);
+}
+
+
+.band-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    width: 30%;
+    background-color: #fdf6e3;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.band-content h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+    
+}
+
+#MusicNGHFB{
+    margin-left: 30px;
+    font-size: 38px;
+}
+
+#NGHFB{
+    margin-left: 30px;
+    font-size: 34px;
+}
+
+.band-content p {
+    font-size: 28px;
+    line-height: 1.6;
+    color: #292929;
+    margin-left: 20px;
+}
+
+.music {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    width: 65%;
+}
+
+
+#BlackStarDancing {
+    background-image: url(Images/EPAlbumCovers/BlackStarDancing.jpg); 
+}
+
+#ThisIsThePlace {
+    background-image: url(Images/EPAlbumCovers/ThisIsThePlace.jpg);
+}
+
+#BlueMoonRising {
+    background-image: url(Images/EPAlbumCovers/BlueMoonRising.jpg);
+}
+
+#NoelGallaghersHighFlyingBirds, 
+#ChasingYesterday, 
+#WhoBuiltTheMoon, 
+#CouncilSkies, 
+#BackTheyWayWeCame {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#EPs {
+    margin-left: 30px;
+    font-size: 34px;
+}
+
+/* EP album cover styles */
+#BlackStarDancing {
+    background-image: url(Images/EPAlbumCovers/BlackStarDancing.jpg); 
+}
+
+#ThisIsThePlace {
+    background-image: url(Images/EPAlbumCovers/ThisIsThePlace.jpg);
+}
+
+#BlueMoonRising {
+    background-image: url(Images/EPAlbumCovers/BlueMoonRising.jpg);
+}
+
+/* Style for EP divs */
+#BlackStarDancing, 
+#ThisIsThePlace, 
+#BlueMoonRising {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #333;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#BlackStarDancing:hover,
+#ThisIsThePlace:hover,
+#BlueMoonRising:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

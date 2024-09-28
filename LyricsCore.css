@@ -1,0 +1,157 @@
+@media (max-width: 768px) {
+    .track-content-container {
+        flex-direction: column; /* Stack Track Listing and Release Notes vertically on small screens */
+    }
+
+    .track-main-content, .track-sub-content {
+        flex: 1;
+        margin-bottom: 20px; /* Space between sections when stacked */
+    }
+}
+
+
+
+.main{
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+#Band-Title {
+    font-family: "NoelFont", sans-serif;
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#Song-Title{
+    text-align: center;
+    font-family: "ReenieBeanie";
+}
+
+.track-listing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "NoelFont", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.Lyrics {
+    
+        font-family: 'ReenieBeanie', cursive; /* Handwritten look */
+        font-size: 30px; /* Adjustable for readability */
+        line-height: 1.8; /* Spacing between lines for easier reading */
+        color: #333; /* Dark text for contrast */
+        padding: 20px;
+        background-color: #fdf3e7; /* Light paper-like background */
+        background-image: url('https://www.transparenttextures.com/patterns/linen.png'); /* Subtle texture */
+        background-size: cover;
+        border-radius: 8px; /* Soft edges for the lyric container */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+        margin-bottom: 30px; /* Space between verses and chorus */
+        text-align: center;
+}
+
+
+.chorus {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    color: #ff6600; /* Different color to distinguish the chorus */
+    margin-top: 30px; /* Space above the chorus */
+    margin-bottom: 30px; /* Space below the chorus */
+}
+
+
+.lyrics:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* A bit of a pop effect */
+    transition: all 0.3s ease;
+}
+
+.verse-line, .chorus-line {
+    margin: 5px 0; /* Space between each line of lyrics */
+}
+
+
+.icon {
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+}
+
+
+.lyric-content-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 20px;
+    gap: 10px;
+   
+}
+
+/* Track Listing: Take up majority of the space (70%) */
+.lyric-main-content {
+    flex: 7; /* 70% of the container */
+    padding-right: 20px; /* Space between track listing and release notes */
+    background-color: #fdf3e7; /* Light beige color for paper */
+    background-image: url('https://www.transparenttextures.com/patterns/linen.png'); /* A subtle paper texture */
+    background-size: cover; /* Ensures the texture covers the entire background */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background in place */
+    font-family: 'Just Another Hand', cursive; /* Example of a handwritten font */
+    color: #333; /* Darker text color for readability */
+    padding: 20px; /* Adding some space around the edges */
+    
+}
+
+/* Release Notes: Take up 30% of the space */
+.lyric-sub-content {
+    flex: 3; /* 30% of the container */
+    padding-left: 20px; /* Space between release notes and track listing */
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional styling for the release notes */
+.release-notes {
+    font-family: "OasisFont", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.release-notes-title {
+    font-family: "OasisFont", sans-serif;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.release-notes p {
+    font-size: 18px; /* Slightly larger for readability */
+    line-height: 1.7; /* Increased line height for spacing */
+    letter-spacing: 0.5px; /* Adds a bit of breathing room between letters */
+    text-align: justify;
+    margin: 25px;
+}
+
+.track-main-content:hover, .track-sub-content:hover {
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}

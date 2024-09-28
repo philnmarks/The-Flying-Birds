@@ -1,0 +1,22 @@
+
+.LyricContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #fdf6e3;
+    border: 1px solid #e3dfd8;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    font-family: "LyricFont", sans-serif;
+}
+
+.LyricContainer p {
+    font-family: "LyricFont";
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    white-space: pre-wrap;
+    color: #333;
+}
